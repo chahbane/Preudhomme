@@ -29,7 +29,7 @@ pipeline {
    stages {
       stage('Checkout') {
          steps {
-            checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/ZouhayrA/tpJenkinsCalculator.git']]])
+            checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/chahbane/tp_calculatrice.git']]])
          }
       }
       stage('Get info from POM') {
